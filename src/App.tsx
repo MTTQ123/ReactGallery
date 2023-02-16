@@ -1,12 +1,14 @@
 import './App.css'
-import TestPain from './components/TestPagination/TestPain'
+import TestPain from './components/Test/TestPain'
+import TestMessage from './components/Test/TestMessage'
 
 
 
 function App() {
   return (
     <div className="App">
-      <TestPain></TestPain>
+      {/* <TestPain></TestPain> */}
+      <TestMessage></TestMessage>
     </div>
   )
 }
