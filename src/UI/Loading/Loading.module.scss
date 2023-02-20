@@ -1,0 +1,31 @@
+.loading{
+    position: fixed;
+    left: 50%;
+    top: 50%;
+
+    .txt,
+    .ring{
+        position: fixed;
+        width: 120px;
+        height: 120px;
+        text-align: center;
+        line-height: 120px;
+        border-radius: 50%;
+        font-size: 20px;
+        
+    }
+    .ring{
+        box-shadow: 4px 0 0 0 #6dce70; 
+        animation: loading 1s linear infinite;
+
+    }
+}
+
+@keyframes loading {
+    0%{
+        transform: rotateZ(0);
+    }
+    100%{
+        transform: rotateZ(360deg);
+    }
+}
