@@ -1,0 +1,38 @@
+.tabs {
+  // display: flex;
+  flex-wrap: nowrap;
+  overflow: hidden;
+  color: black;
+  input {
+    display: none;
+  }
+  input:checked ~ .all {
+    height: auto;
+  }
+  label {
+    float: right;
+  }
+
+  .all {
+    height: 34px;
+    display: flex;
+    flex-wrap: wrap;
+    .tab {
+      cursor: pointer;
+      margin: 0px 12px 6px;
+      padding: 4px 8px;
+
+      border: 1px solid #fff;
+      // border: 1px solid #999;
+      border-radius: 20px;
+
+      &:hover {
+        border: 1px solid #999;
+      }
+    }
+  }
+}
+
+.active {
+  color: #1aa2cf;
+}
